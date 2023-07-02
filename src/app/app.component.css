@@ -1,0 +1,82 @@
+.page{
+  display: grid;
+  grid-template-areas:
+       "h h h"
+       "c c c";
+}
+
+.header{
+  grid-area: h;
+}
+
+h1{
+  margin: 0 0 10px 0;
+}
+
+.content{
+  grid-column: 2 / 3;
+  margin-top: 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  justify-self: center;
+  box-shadow: 0 0 5px grey;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.value{
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.value input{
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.drop-down{
+  font-size: 1.5rem;
+}
+
+button img{
+  width: 100%;
+}
+
+button{
+  width: 3rem;
+  margin-right: 3rem;
+  background: transparent;
+  border-radius: 5px;
+  padding-bottom: 0;
+  border-width: 1px;
+}
+
+select{
+  border-radius: 5px;
+  height: 100%;
+}
+
+button:hover{
+  background-color: lightgrey;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+select:hover{
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.value img{
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+}
